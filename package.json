@@ -1,0 +1,16 @@
+{
+  "name": "d2-mongo-cloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.4",
+    "express": "^4.18.2",
+    "mongoose": "^9.2.1"
+  }
+}

@@ -10,7 +10,7 @@ connectDB();
 app.use(express.json());
 
 // Define a simple route
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     res.send('Hello MongoDB!');
 });
 

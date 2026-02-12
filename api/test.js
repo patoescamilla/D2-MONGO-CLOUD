@@ -5,8 +5,13 @@ const app = express();
 
 connectDB();
 
+app.use(express.json());
+
 app.get('/', (req, res) => {
-    res.send('Hello MongoDB!');
+    res.status(200).send('Hello MongoDB!');
 });
 
-module.exports = app;
+// 👇 ESTA LÍNEA ES CLAVE
+module.exports = (req, res) => {
+    return app(req, res);
+};
